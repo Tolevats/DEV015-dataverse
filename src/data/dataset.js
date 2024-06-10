@@ -24,7 +24,7 @@ export default [
     "facts": {
       "yearOfBirth": "1882",
       "yearOfDeath": "1935",
-      "birthPlace": "Erlangen, Alemania",
+      "birthPlace": "Erlangen",
       "mainField": "Matemáticas"
     },
     "extraInfo": {
