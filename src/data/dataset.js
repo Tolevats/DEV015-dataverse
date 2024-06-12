@@ -61,7 +61,7 @@ export default [
     "name": "Westworld",
     "shortDescription": "Parque temático con robots enloquecidos.",
     "description": "Ambientada en un parque temático futurista poblado por androides, 'Westworld' explora la moralidad, la inteligencia artificial y la naturaleza de la conciencia a través de la interacción entre los huéspedes humanos y los anfitriones robóticos.",
-    "imageUrl": https://lc.cx/ZAdKFx",
+    "imageUrl": "https://lc.cx/ZAdKFx",
     "facts": {
       "yearOfRelease": "2016",
       "yearOfEnd": "2022",
@@ -251,7 +251,7 @@ export default [
     "name": "The Umbrella Academy",
     "shortDescription": "Superhéroes disfuncionales salvan el mundo.",
     "description": "Un grupo de superhéroes adoptados por un excéntrico millonario se reúne después de su muerte para resolver el misterio de su fallecimiento y enfrentarse a la amenaza del apocalipsis, mientras lidian con sus propios problemas familiares y personales.",
-    "imageUrl": "https://www.formulatv.com/images/series/posters/1600/1677/dest_3.jpg
+    "imageUrl": "https://www.formulatv.com/images/series/posters/1600/1677/dest_3.jpg",
     "facts": {
       "yearOfRelease": "2019",
       "yearOfEnd": "presente",
