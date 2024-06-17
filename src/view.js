@@ -1,26 +1,28 @@
 export const renderItems = (data) => { 
+  // console.log(data)
+  
+  const ulElement = document.createElement('ul'); //creamos un elemento ul
 
-  const ulElement = document.createElement('ul');
+  data.forEach(serie => {  //iteramos sobre la data. item=serie
+    // console.log(serie);  
 
-  data.forEach((item, index) => {  //iteramos sobre la data
-    console.log(index, item);  
+    const liSeries = document.createElement('li'); //creamos li para cada serie
+    liSeries.setAttribute('class', 'card') //lo que nos permitirá estilizar tarjetas
+    liSeries.setAttribute('itemscope','')
+    liSeries.setAttribute('itemtype', serie.id)
+    liSeries.innerHTML = `
+    <dl itemscope itemtype ='sfSeries'>
+    <img src='${serie.imageUrl}' alt='${serie.name}'/>
+    <dd itemprop='name'>${serie.name}</dd>
+    <dd itemprop='shortDescription'>${serie.shortDescription}</dd>
+    <dd itemprop='streamingPlatform'>${serie.streamingPlatform}</dd>
+    </dl>
+    `
 
-    const liElement = document.createElement('li');
-    ulElement.appendChild(liElement);
-    console.log("Elemento <ul> creado:", ulElement);  
+    ulElement.appendChild(liSeries); //añade li en ul
+
 
   });
 
   return ulElement;  
 };
-// una funcion para que se despliegue los renders en el DOM 
-document.addEventListener('DOMContentLoaded',function() {
-  const container =document.querySelector(root);
-  const ulElement = renderItems(data);
-  container.appendChild(ulElement);
-  console.log(ulElement);
-
-});
-
-
-}
