@@ -1,26 +1,22 @@
-export const renderItems = (data) => { 
 
-  const ulElement = document.createElement('ul');
+const Series = document.getElementById('dataContainer');
 
-  data.forEach((item, index) => {  //iteramos sobre la data
-    console.log(index, item);  
+export const renderItems = (data) => { // Función flecha
+  data.forEach(Item  => {
 
     const liElement = document.createElement('li');
-    ulElement.appendChild(liElement);
-    console.log("Elemento <ul> creado:", ulElement);  
+    const content = `
+      <h2>${Item.name}</h2>
+      <img src="${Item.imageUrl}" alt="${Item.name}">
+      <p>${Item.shortDescription}</p>
+      <p>${Item.facts.streamingPlatform}</p>
+
+    `;
+    liElement.innerHTML = content;
+
+    Series.appendChild(liElement);
 
   });
-
-  return ulElement;  
-};
-// una funcion para que se despliegue los renders en el DOM 
-document.addEventListener('DOMContentLoaded',function() {
-  const container =document.querySelector(root);
-  const ulElement = renderItems(data);
-  container.appendChild(ulElement);
-  console.log(ulElement);
-
-});
-
-
 }
+
+

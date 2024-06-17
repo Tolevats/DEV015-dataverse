@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     "id": "stranger-things",
     "name": "Stranger Things",
@@ -458,4 +458,6 @@ export default [
     }
   },
   
- ]
+ ];
+
+ export default data;
