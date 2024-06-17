@@ -4,7 +4,7 @@ export default [
     "name": "Stranger Things",
     "shortDescription": "Misteriosos eventos en un pequeño pueblo.",
     "description": "'Stranger Things' nos transporta a los años 80, donde la desaparición de un niño desencadena una serie de misterios en un pequeño pueblo. Amigos, familiares y un grupo de niños descubren secretos gubernamentales, fuerzas sobrenaturales y a una niña con poderes extraordinarios. La serie combina ciencia ficción, horror y drama, logrando un equilibrio entre nostalgia y narrativa innovadora. Lanzada en 2016 y concluida en 2024, cautivó a los espectadores en Netflix con una calificación promedio de 8.7. Con 34 episodios, cuenta con un elenco estelar liderado por Winona Ryder, David Harbour y Millie Bobby Brown.",
-    "imageUrl": "https://lc.cx/6UuOi8",
+    "imageUrl": "https://www.orientaserie.it/wp-content/uploads/2022/09/81eYQ2pOGL._AC_SL1500_.jpg",
     "facts": {
       "yearOfRelease": "2016",
       "yearOfEnd": "2024",
@@ -23,7 +23,7 @@ export default [
     "name": "Black Mirror",
     "shortDescription": "Distopías tecnológicas en cada episodio.",
     "description": "'Black Mirror' presenta distopías tecnológicas en cada episodio, explorando los aspectos más oscuros de nuestra relación con la tecnología. Con historias únicas y diversos personajes, revela los efectos perturbadores de la tecnología avanzada, desde la vigilancia hasta la inteligencia artificial y las redes sociales. Lanzada en 2011 y concluida en 2023, cautivó a audiencias en Netflix con una calificación promedio de 8.8. Con un elenco destacado, incluyendo a Bryce Dallas Howard, Jon Hamm y Hayley Atwell, es una experiencia televisiva cautivadora para adultos de todas las edades.",
-    "imageUrl": "https://lc.cx/ydbvOf",
+    "imageUrl": "https://es.web.img3.acsta.net/pictures/23/05/24/11/22/4785740.jpg",
     "facts": {
       "yearOfRelease": "2011",
       "yearOfEnd": "2023",
@@ -42,7 +42,7 @@ export default [
     "name": "The Expanse",
     "shortDescription": "Conflictos interestelares en el futuro.",
     "description": "'The Expanse' te sumerge en un futuro donde la humanidad ha colonizado el sistema solar. La serie sigue a un detective y un capitán de nave mientras desentrañan una conspiración que amenaza la frágil paz entre la Tierra, Marte y el Cinturón de Asteroides. Combina ciencia ficción, política y misterio, ofreciendo una visión compleja de un futuro interestelar. Transmitida en Amazon Prime Video desde 2015 hasta 2022, cautivó a los espectadores con una calificación promedio de 8.5. Con elementos intrigantes y un elenco estelar, incluyendo a Thomas Jane y Steven Strait, es una experiencia imperdible para los amantes del género.",
-    "imageUrl": "https://lc.cx/9RUVLe",
+    "imageUrl": "https://www.ecartelera.com.mx/carteles-series/800/850/004_p.jpg",
     "facts": {
       "yearOfRelease": "2015",
       "yearOfEnd": "2022",
@@ -99,7 +99,7 @@ export default [
     "name": "Doctor Who",
     "shortDescription": "Viajes en el tiempo y espacio.",
     "description": "'Doctor Who' es una serie británica emblemática que narra las aventuras del Doctor, un Señor del Tiempo de la raza extraterrestre conocida como los Gallifreyans. A bordo de la TARDIS, una nave en forma de cabina telefónica, el Doctor viaja a través del tiempo y el espacio, enfrentándose a diversos enemigos y resolviendo problemas en todo el universo. Desde su lanzamiento en 1963 hasta la actualidad, esta serie cautiva a los espectadores en la BBC con una calificación promedio de 8.6. Con su imaginativa premisa y personajes entrañables, 'Doctor Who' sigue siendo un fenómeno de la cultura pop.",
-    "imageUrl": "https://lc.cx/bSHywy",
+    "imageUrl": "https://www.infobae.com/new-resizer/lCRS6rtdT14-VuDtMGzfqbHjlIA=/1200x675/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/FYBQEPGBARAZVPLJOGI6CNXLBM.jpg",
     "facts": {
       "yearOfRelease": "1963",
       "yearOfEnd": "presente",
@@ -122,7 +122,7 @@ export default [
     "facts": {
       "yearOfRelease": "2020",
       "yearOfEnd": "2023",
-      "streamingPlatform": "CBS All Access",
+      "streamingPlatform": "CBS",
       "country": "Estados Unidos",
       "averageRating": "7.5"
     },
@@ -236,7 +236,7 @@ export default [
     "facts": {
       "yearOfRelease": "2017",
       "yearOfEnd": "presente",
-      "streamingPlatform": "CBS All Access",
+      "streamingPlatform": "CBS",
       "country": "Estados Unidos",
       "averageRating": "7.2"
     },
