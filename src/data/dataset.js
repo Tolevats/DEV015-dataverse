@@ -4,7 +4,7 @@ export default [
     "name": "Stranger Things",
     "shortDescription": "Misteriosos eventos en un pequeño pueblo.",
     "description": "'Stranger Things' nos transporta a los años 80, donde la desaparición de un niño desencadena una serie de misterios en un pequeño pueblo. Amigos, familiares y un grupo de niños descubren secretos gubernamentales, fuerzas sobrenaturales y a una niña con poderes extraordinarios. La serie combina ciencia ficción, horror y drama, logrando un equilibrio entre nostalgia y narrativa innovadora. Lanzada en 2016 y concluida en 2024, cautivó a los espectadores en Netflix con una calificación promedio de 8.7. Con 34 episodios, cuenta con un elenco estelar liderado por Winona Ryder, David Harbour y Millie Bobby Brown.",
-    "imageUrl": "https://lc.cx/6UuOi8",
+    "imageUrl": "https://www.orientaserie.it/wp-content/uploads/2022/09/81eYQ2pOGL._AC_SL1500_.jpg",
     "facts": {
       "yearOfRelease": "2016",
       "yearOfEnd": "2024",
@@ -23,7 +23,7 @@ export default [
     "name": "Black Mirror",
     "shortDescription": "Distopías tecnológicas en cada episodio.",
     "description": "'Black Mirror' presenta distopías tecnológicas en cada episodio, explorando los aspectos más oscuros de nuestra relación con la tecnología. Con historias únicas y diversos personajes, revela los efectos perturbadores de la tecnología avanzada, desde la vigilancia hasta la inteligencia artificial y las redes sociales. Lanzada en 2011 y concluida en 2023, cautivó a audiencias en Netflix con una calificación promedio de 8.8. Con un elenco destacado, incluyendo a Bryce Dallas Howard, Jon Hamm y Hayley Atwell, es una experiencia televisiva cautivadora para adultos de todas las edades.",
-    "imageUrl": "https://lc.cx/ydbvOf",
+    "imageUrl": "https://es.web.img3.acsta.net/pictures/23/05/24/11/22/4785740.jpg",
     "facts": {
       "yearOfRelease": "2011",
       "yearOfEnd": "2023",
@@ -42,7 +42,7 @@ export default [
     "name": "The Expanse",
     "shortDescription": "Conflictos interestelares en el futuro.",
     "description": "'The Expanse' te sumerge en un futuro donde la humanidad ha colonizado el sistema solar. La serie sigue a un detective y un capitán de nave mientras desentrañan una conspiración que amenaza la frágil paz entre la Tierra, Marte y el Cinturón de Asteroides. Combina ciencia ficción, política y misterio, ofreciendo una visión compleja de un futuro interestelar. Transmitida en Amazon Prime Video desde 2015 hasta 2022, cautivó a los espectadores con una calificación promedio de 8.5. Con elementos intrigantes y un elenco estelar, incluyendo a Thomas Jane y Steven Strait, es una experiencia imperdible para los amantes del género.",
-    "imageUrl": "https://lc.cx/9RUVLe",
+    "imageUrl": "https://www.ecartelera.com.mx/carteles-series/800/850/004_p.jpg",
     "facts": {
       "yearOfRelease": "2015",
       "yearOfEnd": "2022",
@@ -99,7 +99,7 @@ export default [
     "name": "Doctor Who",
     "shortDescription": "Viajes en el tiempo y espacio.",
     "description": "'Doctor Who' es una serie británica emblemática que narra las aventuras del Doctor, un Señor del Tiempo de la raza extraterrestre conocida como los Gallifreyans. A bordo de la TARDIS, una nave en forma de cabina telefónica, el Doctor viaja a través del tiempo y el espacio, enfrentándose a diversos enemigos y resolviendo problemas en todo el universo. Desde su lanzamiento en 1963 hasta la actualidad, esta serie cautiva a los espectadores en la BBC con una calificación promedio de 8.6. Con su imaginativa premisa y personajes entrañables, 'Doctor Who' sigue siendo un fenómeno de la cultura pop.",
-    "imageUrl": "https://lc.cx/bSHywy",
+    "imageUrl": "https://www.infobae.com/new-resizer/lCRS6rtdT14-VuDtMGzfqbHjlIA=/1200x675/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/FYBQEPGBARAZVPLJOGI6CNXLBM.jpg",
     "facts": {
       "yearOfRelease": "1963",
       "yearOfEnd": "presente",
@@ -122,7 +122,7 @@ export default [
     "facts": {
       "yearOfRelease": "2020",
       "yearOfEnd": "2023",
-      "streamingPlatform": "CBS All Access",
+      "streamingPlatform": "CBS",
       "country": "Estados Unidos",
       "averageRating": "7.5"
     },
@@ -156,7 +156,7 @@ export default [
     "name": "The 100",
     "shortDescription": "Supervivencia post-apocalíptica.",
     "description": "Después de un apocalipsis nuclear, 'The 100' sigue a un grupo de jóvenes delincuentes enviados de vuelta a la Tierra desde una estación espacial en órbita para determinar si el planeta es habitable. A medida que enfrentan desafíos extremos, deben luchar por la supervivencia, enfrentándose a peligros desconocidos y conflictos internos. En su intento por reconstruir la sociedad, descubren secretos ocultos sobre el pasado y el futuro de la humanidad, revelando verdades impactantes que cambian su percepción del mundo y de sí mismos. 'The 100' combina acción, drama y ciencia ficción en una narrativa emocionante y cautivadora.",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BZDkwOWFmN2ItY2NkOC00YTg3LWFlMzEtM2Y4ZjE2YmFmYjYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+    "imageUrl": "https://image.tmdb.org/t/p/original/3LyBrBX5z619InBW1zNSl5nHO5C.jpg",
     "facts": {
       "yearOfRelease": "2014",
       "yearOfEnd": "2020",
@@ -213,7 +213,7 @@ export default [
     "name": "Lost in Space",
     "shortDescription": "Familia varada en un planeta alienígena.",
     "description": "'Lost in Space' narra la odisea de una familia de colonos espaciales que, en su viaje hacia un nuevo hogar en un planeta distante, se extravía en un mundo alienígena tras un desvío inesperado de su nave. Esta serie, lanzada en 2018 y concluida en 2021, ofrece una emocionante combinación de aventura, ciencia ficción y drama familiar. Transmitida en Netflix, cautivó al público estadounidense con una calificación promedio de 7.3. Con 28 episodios, el elenco liderado por Molly Parker, Toby Stephens y Maxwell Jenkins cautiva a espectadores de todas las edades, desde los 10 hasta los 40 años.'",
-    "imageUrl": "https://pics.filmaffinity.com/Perdidos_en_el_espacio_Serie_de_TV-460443844-large.jpg",
+    "imageUrl": "https://miro.medium.com/v2/resize:fit:718/1*dBlD9yZDQEFLl6efG0gUFQ.jpeg",
     "facts": {
       "yearOfRelease": "2018",
       "yearOfEnd": "2021",
@@ -232,11 +232,11 @@ export default [
     "name": "Star Trek: Discovery",
     "shortDescription": "Nueva tripulación en la USS Discovery.",
     "description": "'Star Trek: Discovery' nos lleva a bordo de la USS Discovery, donde una nueva tripulación se embarca en emocionantes misiones de exploración. En esta serie, los personajes descubren nuevos mundos y especies alienígenas, mientras se enfrentan a enemigos antiguos y nuevos en un esfuerzo por mantener la paz en la Federación Unida de Planetas. Desde su lanzamiento en 2017 hasta la actualidad, esta producción estadounidense ha cautivado a los espectadores con una calificación promedio de 7.2. Disponible en CBS All Access, 'Star Trek: Discovery' continúa el legado de una de las franquicias más queridas de la ciencia ficción.",
-    "imageUrl": "https://pics.filmaffinity.com/Star_Trek_Discovery_Serie_de_TV-349570845-large.jpg",
+    "imageUrl": "https://image.tmdb.org/t/p/original/zh7GLsorxecv0D8d7QAVkQUe1ju.jpg",
     "facts": {
       "yearOfRelease": "2017",
       "yearOfEnd": "presente",
-      "streamingPlatform": "CBS All Access",
+      "streamingPlatform": "CBS",
       "country": "Estados Unidos",
       "averageRating": "7.2"
     },
@@ -424,7 +424,7 @@ export default [
     "name": "Fringe",
     "shortDescription": "Investigación de fenómenos paranormales.",
     "description": "La agente del FBI Olivia Dunham se une al científico excéntrico Walter Bishop y su hijo Peter para investigar fenómenos inexplicables. A medida que profundizan, descubren una conspiración interdimensional que desafía la comprensión humana, enfrentándose a peligros que amenazan con trastornar la realidad misma. Juntos, exploran los límites de la ciencia y la humanidad, desentrañando misterios que se extienden más allá de lo imaginable. A través de experimentos audaces y riesgos calculados, la serie se sumerge en los rincones más oscuros de la existencia, desafiando las percepciones sobre la realidad y el universo.",
-    "imageUrl": "https://example.com/fringe.jpg",
+    "imageUrl": "https://img5.allocine.fr/acmedia/medias/nmedia/18/85/80/03/19805579.jpg",
     "facts": {
       "yearOfRelease": "2008",
       "yearOfEnd": "2013",
