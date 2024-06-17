@@ -1,3 +1,4 @@
+const Series = document.getElementById('dataContainer');
 
 export const renderItems = (data) => { // Función flecha
   data.forEach(Item  => {
