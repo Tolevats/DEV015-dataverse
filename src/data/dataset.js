@@ -156,7 +156,7 @@ export default [
     "name": "The 100",
     "shortDescription": "Supervivencia post-apocalíptica.",
     "description": "Después de un apocalipsis nuclear, 'The 100' sigue a un grupo de jóvenes delincuentes enviados de vuelta a la Tierra desde una estación espacial en órbita para determinar si el planeta es habitable. A medida que enfrentan desafíos extremos, deben luchar por la supervivencia, enfrentándose a peligros desconocidos y conflictos internos. En su intento por reconstruir la sociedad, descubren secretos ocultos sobre el pasado y el futuro de la humanidad, revelando verdades impactantes que cambian su percepción del mundo y de sí mismos. 'The 100' combina acción, drama y ciencia ficción en una narrativa emocionante y cautivadora.",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BZDkwOWFmN2ItY2NkOC00YTg3LWFlMzEtM2Y4ZjE2YmFmYjYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+    "imageUrl": "https://image.tmdb.org/t/p/original/3LyBrBX5z619InBW1zNSl5nHO5C.jpg",
     "facts": {
       "yearOfRelease": "2014",
       "yearOfEnd": "2020",
@@ -213,7 +213,7 @@ export default [
     "name": "Lost in Space",
     "shortDescription": "Familia varada en un planeta alienígena.",
     "description": "'Lost in Space' narra la odisea de una familia de colonos espaciales que, en su viaje hacia un nuevo hogar en un planeta distante, se extravía en un mundo alienígena tras un desvío inesperado de su nave. Esta serie, lanzada en 2018 y concluida en 2021, ofrece una emocionante combinación de aventura, ciencia ficción y drama familiar. Transmitida en Netflix, cautivó al público estadounidense con una calificación promedio de 7.3. Con 28 episodios, el elenco liderado por Molly Parker, Toby Stephens y Maxwell Jenkins cautiva a espectadores de todas las edades, desde los 10 hasta los 40 años.'",
-    "imageUrl": "https://pics.filmaffinity.com/Perdidos_en_el_espacio_Serie_de_TV-460443844-large.jpg",
+    "imageUrl": "https://miro.medium.com/v2/resize:fit:718/1*dBlD9yZDQEFLl6efG0gUFQ.jpeg",
     "facts": {
       "yearOfRelease": "2018",
       "yearOfEnd": "2021",
@@ -232,7 +232,7 @@ export default [
     "name": "Star Trek: Discovery",
     "shortDescription": "Nueva tripulación en la USS Discovery.",
     "description": "'Star Trek: Discovery' nos lleva a bordo de la USS Discovery, donde una nueva tripulación se embarca en emocionantes misiones de exploración. En esta serie, los personajes descubren nuevos mundos y especies alienígenas, mientras se enfrentan a enemigos antiguos y nuevos en un esfuerzo por mantener la paz en la Federación Unida de Planetas. Desde su lanzamiento en 2017 hasta la actualidad, esta producción estadounidense ha cautivado a los espectadores con una calificación promedio de 7.2. Disponible en CBS All Access, 'Star Trek: Discovery' continúa el legado de una de las franquicias más queridas de la ciencia ficción.",
-    "imageUrl": "https://pics.filmaffinity.com/Star_Trek_Discovery_Serie_de_TV-349570845-large.jpg",
+    "imageUrl": "https://image.tmdb.org/t/p/original/zh7GLsorxecv0D8d7QAVkQUe1ju.jpg",
     "facts": {
       "yearOfRelease": "2017",
       "yearOfEnd": "presente",
@@ -424,7 +424,7 @@ export default [
     "name": "Fringe",
     "shortDescription": "Investigación de fenómenos paranormales.",
     "description": "La agente del FBI Olivia Dunham se une al científico excéntrico Walter Bishop y su hijo Peter para investigar fenómenos inexplicables. A medida que profundizan, descubren una conspiración interdimensional que desafía la comprensión humana, enfrentándose a peligros que amenazan con trastornar la realidad misma. Juntos, exploran los límites de la ciencia y la humanidad, desentrañando misterios que se extienden más allá de lo imaginable. A través de experimentos audaces y riesgos calculados, la serie se sumerge en los rincones más oscuros de la existencia, desafiando las percepciones sobre la realidad y el universo.",
-    "imageUrl": "https://example.com/fringe.jpg",
+    "imageUrl": "https://img5.allocine.fr/acmedia/medias/nmedia/18/85/80/03/19805579.jpg",
     "facts": {
       "yearOfRelease": "2008",
       "yearOfEnd": "2013",
