@@ -19,4 +19,3 @@ export const renderItems = (data) => { // Función flecha
   });
 }
 
-
