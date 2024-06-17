@@ -1,6 +1,7 @@
 export const renderItems = (data) => { 
   // console.log(data)
-  
+/*   document.getElementById('dataContainer');
+  const container = document.getElementById('dataContainer'); */
   const ulElement = document.createElement('ul'); //creamos un elemento ul
 
   data.forEach(serie => {  //iteramos sobre la data. item=serie
