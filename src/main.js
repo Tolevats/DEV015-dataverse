@@ -1,6 +1,10 @@
-import { example } from './dataFunctions.js';
-import { renderItems } from './view.js';
+import { renderItems } from './view'; // Importar la función renderItems desde tu archivo view.js
 
-import data from './data/dataset.js';
-renderItems(data);
+document.addEventListener('DOMContentLoaded', () => {
+  const data = obtenerDatos(); // Aquí obtienes tus datos de alguna manera, por ejemplo desde una API o archivo
 
+  const rootElement = document.getElementById('root'); // Obtener el elemento raíz donde se va a renderizar el contenido
+
+  const itemsElement = renderItems(data);
+  rootElement.appendChild(itemsElement); 
+});
