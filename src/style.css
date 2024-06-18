@@ -76,7 +76,7 @@ button:hover {
     padding: 20px;
   }
 
-.item-style {
+li {
     /* Estilos generales para li */
     margin: 10px;
     padding: 20px;
@@ -134,4 +134,7 @@ footer {
     font-size: 12px;
     color: #FCFFE7;
     padding: 20px 30px;
+}
+select {
+    font-family: "Gugi", sans-serif;
 }
