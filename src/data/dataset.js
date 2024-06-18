@@ -4,7 +4,7 @@ export default [
     "name": "Stranger Things",
     "shortDescription": "Misteriosos eventos en un pequeño pueblo.",
     "description": "'Stranger Things' nos transporta a los años 80, donde la desaparición de un niño desencadena una serie de misterios en un pequeño pueblo. Amigos, familiares y un grupo de niños descubren secretos gubernamentales, fuerzas sobrenaturales y a una niña con poderes extraordinarios. La serie combina ciencia ficción, horror y drama, logrando un equilibrio entre nostalgia y narrativa innovadora. Lanzada en 2016 y concluida en 2024, cautivó a los espectadores en Netflix con una calificación promedio de 8.7. Con 34 episodios, cuenta con un elenco estelar liderado por Winona Ryder, David Harbour y Millie Bobby Brown.",
-    "imageUrl": "https://www.orientaserie.it/wp-content/uploads/2022/09/81eYQ2pOGL._AC_SL1500_.jpg",
+    "imageUrl": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
     "facts": {
       "yearOfRelease": "2016",
       "yearOfEnd": "2024",
@@ -42,7 +42,7 @@ export default [
     "name": "The Expanse",
     "shortDescription": "Conflictos interestelares en el futuro.",
     "description": "'The Expanse' te sumerge en un futuro donde la humanidad ha colonizado el sistema solar. La serie sigue a un detective y un capitán de nave mientras desentrañan una conspiración que amenaza la frágil paz entre la Tierra, Marte y el Cinturón de Asteroides. Combina ciencia ficción, política y misterio, ofreciendo una visión compleja de un futuro interestelar. Transmitida en Amazon Prime Video desde 2015 hasta 2022, cautivó a los espectadores con una calificación promedio de 8.5. Con elementos intrigantes y un elenco estelar, incluyendo a Thomas Jane y Steven Strait, es una experiencia imperdible para los amantes del género.",
-    "imageUrl": "https://www.ecartelera.com.mx/carteles-series/800/850/004_p.jpg",
+    "imageUrl": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/8djpxDeWpINnGhjpFXQjnBe6zbx.jpg",
     "facts": {
       "yearOfRelease": "2015",
       "yearOfEnd": "2022",
@@ -99,7 +99,7 @@ export default [
     "name": "Doctor Who",
     "shortDescription": "Viajes en el tiempo y espacio.",
     "description": "'Doctor Who' es una serie británica emblemática que narra las aventuras del Doctor, un Señor del Tiempo de la raza extraterrestre conocida como los Gallifreyans. A bordo de la TARDIS, una nave en forma de cabina telefónica, el Doctor viaja a través del tiempo y el espacio, enfrentándose a diversos enemigos y resolviendo problemas en todo el universo. Desde su lanzamiento en 1963 hasta la actualidad, esta serie cautiva a los espectadores en la BBC con una calificación promedio de 8.6. Con su imaginativa premisa y personajes entrañables, 'Doctor Who' sigue siendo un fenómeno de la cultura pop.",
-    "imageUrl": "https://www.infobae.com/new-resizer/lCRS6rtdT14-VuDtMGzfqbHjlIA=/1200x675/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/FYBQEPGBARAZVPLJOGI6CNXLBM.jpg",
+    "imageUrl": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/8FHthx4Vu81J4X5BTLhJYK9Gtbs.jpg",
     "facts": {
       "yearOfRelease": "1963",
       "yearOfEnd": "presente",
@@ -156,7 +156,7 @@ export default [
     "name": "The 100",
     "shortDescription": "Supervivencia post-apocalíptica.",
     "description": "Después de un apocalipsis nuclear, 'The 100' sigue a un grupo de jóvenes delincuentes enviados de vuelta a la Tierra desde una estación espacial en órbita para determinar si el planeta es habitable. A medida que enfrentan desafíos extremos, deben luchar por la supervivencia, enfrentándose a peligros desconocidos y conflictos internos. En su intento por reconstruir la sociedad, descubren secretos ocultos sobre el pasado y el futuro de la humanidad, revelando verdades impactantes que cambian su percepción del mundo y de sí mismos. 'The 100' combina acción, drama y ciencia ficción en una narrativa emocionante y cautivadora.",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BZDkwOWFmN2ItY2NkOC00YTg3LWFlMzEtM2Y4ZjE2YmFmYjYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+    "imageUrl": "https://image.tmdb.org/t/p/original/3LyBrBX5z619InBW1zNSl5nHO5C.jpg",
     "facts": {
       "yearOfRelease": "2014",
       "yearOfEnd": "2020",
@@ -175,7 +175,7 @@ export default [
     "name": "Dark",
     "shortDescription": "Misterios temporales en un pueblo alemán.",
     "description": "Dark es una fascinante serie alemana que se desarrolla en la pequeña ciudad de Winden. Dos niños desaparecen, desencadenando una serie de eventos que revelan los oscuros secretos de cuatro familias interconectadas. A lo largo de 26 episodios, la serie explora de manera magistral el concepto del tiempo, entrelazando el pasado, presente y futuro en una trama llena de misterio y suspenso. Con un elenco estelar liderado por Louis Hofmann, Oliver Masucci y Karoline Eichhorn, esta producción de Netflix cautiva a audiencias de 18 a 45 años con su intriga y una calificación promedio de 8.8.",
-    "imageUrl": "https://i.pinimg.com/564x/5f/4e/61/5f4e61600201742ddbfaaab54af667fd.jpg",
+    "imageUrl": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/7CFCzWIZZcnxHke3yAQiGPWXHwF.jpg",
     "facts": {
       "yearOfRelease": "2017",
       "yearOfEnd": "2020",
@@ -213,7 +213,7 @@ export default [
     "name": "Lost in Space",
     "shortDescription": "Familia varada en un planeta alienígena.",
     "description": "'Lost in Space' narra la odisea de una familia de colonos espaciales que, en su viaje hacia un nuevo hogar en un planeta distante, se extravía en un mundo alienígena tras un desvío inesperado de su nave. Esta serie, lanzada en 2018 y concluida en 2021, ofrece una emocionante combinación de aventura, ciencia ficción y drama familiar. Transmitida en Netflix, cautivó al público estadounidense con una calificación promedio de 7.3. Con 28 episodios, el elenco liderado por Molly Parker, Toby Stephens y Maxwell Jenkins cautiva a espectadores de todas las edades, desde los 10 hasta los 40 años.'",
-    "imageUrl": "https://pics.filmaffinity.com/Perdidos_en_el_espacio_Serie_de_TV-460443844-large.jpg",
+    "imageUrl": "https://miro.medium.com/v2/resize:fit:718/1*dBlD9yZDQEFLl6efG0gUFQ.jpeg",
     "facts": {
       "yearOfRelease": "2018",
       "yearOfEnd": "2021",
@@ -232,7 +232,7 @@ export default [
     "name": "Star Trek: Discovery",
     "shortDescription": "Nueva tripulación en la USS Discovery.",
     "description": "'Star Trek: Discovery' nos lleva a bordo de la USS Discovery, donde una nueva tripulación se embarca en emocionantes misiones de exploración. En esta serie, los personajes descubren nuevos mundos y especies alienígenas, mientras se enfrentan a enemigos antiguos y nuevos en un esfuerzo por mantener la paz en la Federación Unida de Planetas. Desde su lanzamiento en 2017 hasta la actualidad, esta producción estadounidense ha cautivado a los espectadores con una calificación promedio de 7.2. Disponible en CBS All Access, 'Star Trek: Discovery' continúa el legado de una de las franquicias más queridas de la ciencia ficción.",
-    "imageUrl": "https://pics.filmaffinity.com/Star_Trek_Discovery_Serie_de_TV-349570845-large.jpg",
+    "imageUrl": "https://image.tmdb.org/t/p/original/zh7GLsorxecv0D8d7QAVkQUe1ju.jpg",
     "facts": {
       "yearOfRelease": "2017",
       "yearOfEnd": "presente",
@@ -251,7 +251,7 @@ export default [
     "name": "The Umbrella Academy",
     "shortDescription": "Superhéroes disfuncionales salvan el mundo.",
     "description": "'The Umbrella Academy' presenta a un grupo de superhéroes disfuncionales adoptados por un excéntrico millonario. Tras su muerte, los hermanos se reúnen para resolver el misterio de su fallecimiento y evitar un apocalipsis inminente. Mientras luchan contra esta amenaza global, también enfrentan sus propios conflictos familiares y personales. La serie, que se estrenó en 2019 y continúa en la actualidad, ha cautivado a los espectadores con una calificación promedio de 8.0 en Netflix. Ambientada en Estados Unidos, 'The Umbrella Academy' combina acción, intriga y drama en una emocionante narrativa de superhéroes.",
-    "imageUrl": "https://www.formulatv.com/images/series/posters/1600/1677/dest_3.jpg",
+    "imageUrl": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/qhcwrnnCnN8NE1N6XXKHFmveJR9.jpg",
     "facts": {
       "yearOfRelease": "2019",
       "yearOfEnd": "presente",
@@ -284,8 +284,6 @@ export default [
       "ageRange": "18-50"
     }
   },
- 
- 
   {
     "id": "expediente-x",
     "name": "Expediente X",
@@ -367,7 +365,7 @@ export default [
     "name": "Firefly",
     "shortDescription": "Aventuras espaciales de una tripulación renegada.",
     "description": "'Firefly' es una serie de ciencia ficción que sigue a la tripulación del Serenity mientras navegan por una galaxia fronteriza en busca de trabajos para sobrevivir. Ambientada en un futuro donde la humanidad ha colonizado otros planetas, combina elementos de western y espacio. El capitán Malcolm Reynolds lidera un grupo variado, cada uno con habilidades únicas y secretos. Enfrentando desafíos morales y peligros intergalácticos, la serie explora temas como la libertad, la lealtad y la lucha contra la opresión. Su narrativa única y personajes memorables la convierten en una joya de la ciencia ficción.",
-    "imageUrl": "https://pics.filmaffinity.com/Firefly_Serie_de_TV-864482280-large.jpg",
+    "imageUrl": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/vZcKsy4sGAvWMVqLluwYuoi11Kj.jpg",
     "facts": {
       "yearOfRelease": "2002",
       "yearOfEnd": "2003",
@@ -405,7 +403,7 @@ export default [
     "name": "The Twilight Zone",
     "shortDescription": "Explora giros morales y universales en mundos surrealistas. Una serie antológica de ciencia ficción y fantasía que desafía la mente.",
     "description": "'The Twilight Zone' es una serie de antología de ciencia ficción y fantasía que presenta historias independientes con giros inesperados y morales intrigantes. Creada por Rod Serling, cada episodio transporta a los espectadores a mundos surrealistas y reflexiona sobre temas universales como el destino, la moralidad y en la naturaleza humana. A lo largo de todas las temporadas, la serie ha dejado una gran marca indeleble en la cultura popular, explorando conceptos filosóficos a través de narrativas cautivadoras y personajes memorables, convirtiéndola en un clásico atemporal de la televisión.",
-    "imageUrl": "https://pics.filmaffinity.com/The_Twilight_Zone_Serie_de_TV-351880714-large.jpg",
+    "imageUrl": "https://image.tmdb.org/t/p/w500/7uY4pCOxbEdv4M8jTE4uMPVoSIW.jpg",
     "facts": {
       "yearOfRelease": "1959",
       "yearOfEnd": "1964",
@@ -424,7 +422,7 @@ export default [
     "name": "Fringe",
     "shortDescription": "Investigación de fenómenos paranormales.",
     "description": "La agente del FBI Olivia Dunham se une al científico excéntrico Walter Bishop y su hijo Peter para investigar fenómenos inexplicables. A medida que profundizan, descubren una conspiración interdimensional que desafía la comprensión humana, enfrentándose a peligros que amenazan con trastornar la realidad misma. Juntos, exploran los límites de la ciencia y la humanidad, desentrañando misterios que se extienden más allá de lo imaginable. A través de experimentos audaces y riesgos calculados, la serie se sumerge en los rincones más oscuros de la existencia, desafiando las percepciones sobre la realidad y el universo.",
-    "imageUrl": "https://example.com/fringe.jpg",
+    "imageUrl": "https://img5.allocine.fr/acmedia/medias/nmedia/18/85/80/03/19805579.jpg",
     "facts": {
       "yearOfRelease": "2008",
       "yearOfEnd": "2013",

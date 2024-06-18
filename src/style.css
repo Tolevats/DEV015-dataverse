@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Baumans&family=Gugi&family=Offside&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2B3467;
+}
+
+header {
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color:#FCFFE7;
+    padding: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    color: #FCFFE7;
+    padding: 20px; 
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+label {
+    font-family: "Gugi", sans-serif;
+    font-size: 14px;
+    color: #FCFFE7;
+}
+
+button {
+    background-color: #EB455F;
+    color: #FCFFE7;
+    font-family: "Gugi", sans-serif;
+    font-size: 14px;
+    padding: 6px;
+    margin: 10px 5px 30px 20px;
+    border: 0;
+    border-radius: 5px;
+  }
+
+button:hover {
+    cursor: pointer;
+    background-color: #FCFFE7;
+    color: #EB455F;
+}
+
+#dataContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacio entre las tarjetas */
+    list-style-type: none;
+    padding: 20px;
+  }
+
+.item-style {
+    /* Estilos generales para li */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.item-style:hover {
+    transform: scale(1.05); /* Animación al pasar mouse por encima */
+  }
+
+.item-style img {
+    /* Estilos para las imágenes */
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 200px; /* Altura máxima de la imagen */
+    object-fit: cover; /* Recorta la imagen si es necesario */
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .item-style h3, .item-style h4, .item-style p {
+    margin: 8px 0;
+    text-align: left;
+  }
+
+  .item-style h3 {
+    /* Estilos para el título */
+    color: #333;
+    font-size: 18px;
+  }
+
+.item-style p {
+    /* Estilos para párrafo */
+    color: #666;
+    font-family: "Offside", sans-serif;
+    font-size: 12px;
+  }
+
+.item-style h4 {
+    color: #EB455F;
+    font-family: "Gugi", sans-serif;
+    font-size: 14px;
+}
+
+footer {
+    font-family: "Atomic Age", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #FCFFE7;
+    padding: 20px 30px;
+}
