@@ -9,7 +9,7 @@
 body {
     
     background: linear-gradient(to bottom, #000066, #3564bb, #4d80aa);
-    background-image: url('https://i.gifer.com/Q8i2.gif');
+ 
 }
 
 .description-container {
@@ -75,12 +75,9 @@ h3 {
 label {
     font-family: "Gugi", sans-serif;
     font-size: 14px;
-    color: #ffffff;
+    color: #15053f;
     font-weight: bold;
-    text-shadow: -1px -1px 0 #000,  
-                 1px -1px 0 #000,
-                 -1px 1px 0 #000,
-                 1px 1px 0 #000;
+
 }
 
 
@@ -88,8 +85,8 @@ label {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 10vh; 
-    padding: 5px 20px 0px 10px;
+    height: 5vh; 
+    padding: 50px, 10px, 10px, 10px;
     margin: 0 auto; 
 }
 
@@ -99,7 +96,7 @@ button {
     font-family: "Gugi", sans-serif;
     font-size: 14px;
     padding: 6px;
-    margin: 10px 5px 30px 20px;
+    margin: 10px 10px 30px 20px;
     border: 0;
     border-radius: 5px;
 
@@ -115,7 +112,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Espacio entre las tarjetas */
+    gap: 8px; /* Espacio entre las tarjetas */
     list-style-type: none;
     padding: 0px;
     text-align: center;
@@ -129,7 +126,7 @@ li {
     border-radius: 10px;
     background-color: #f9f9f9;
     width: 100%;
-    max-width: 300px; /* Ancho máximo de la tarjeta */
+    max-width: 200px; /* Ancho máximo de la tarjeta */
     text-align: center;
     transition: transform 0.2s;
 }
@@ -181,4 +178,13 @@ footer {
 }
 select {
     font-family: "Gugi", sans-serif;
+    
 }
+.filtros select {
+    font-family: "Gugi", sans-serif;
+    line-height: 1.5; /* Esto aumenta la altura de la línea */
+    height: 20px; /* Ajusta este valor según tus necesidades */
+    padding: 1px; /* Ajusta el padding según el efecto deseado */
+    font-size: 12px; /* Puedes ajustar el tamaño de la fuente también */
+}
+

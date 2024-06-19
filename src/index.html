@@ -21,9 +21,9 @@
 
       
       <section class="filtros">
-        <label for="streamingPlatform">Filtrar por plataforma:</label>
+        <label for="streamingPlatform">Filtrar por :</label>
         <select data-testid="select-filter" name="streamingPlatform" id="streamingPlatform">
-          <option value="" disabled selected>Seleccionar</option>
+          <option value="" disabled selected>Plataforma</option>
           <option value="apple-tv">Adult Swim</option>
           <option value="prime-video">Amazon Prime Video</option>
           <option value="apple-tv">Apple TV+</option>
@@ -40,25 +40,24 @@
           <option value="tcw">The CW</option>
         </select>
       
-        <label for="yearOfRelease">Filtrar por año:</label>
+        <label for="yearOfRelease">|</label>
         <select data-testid="select-filter" name="yearOfRelease" id="yearOfRelease">
-          <option value="" disabled selected>Seleccionar</option>
+          <option value="" disabled selected>Año</option>
           <option value="asc">Más antiguas</option>
           <option value="desc">Más recientes</option>
         </select>
       
-        <label for="name">Ordenar por:</label>
+        <label for="name">|</label>
         <select data-testid="select-sort" name="name" id="name">
-          <option value="" disabled selected>Seleccionar</option>
+          <option value="" disabled selected>Orden</option>
           <option value="asc">Nombre A-Z</option>
           <option value="desc">Nombre Z-A</option>
         </select>
+        <div class="button-container">
+          <button data-testid="button-clear" id="buttonClear">Limpiar</button>
+          <button id="stats">Popularidad</button>
+          </div>
       </section>
-
-      <div class="button-container">
-      <button data-testid="button-clear" id="buttonClear">Limpiar</button>
-      <button id="stats">Popularidad</button>
-      </div>
         
       <div id="root">
       <ul id="dataContainer"></ul>
@@ -68,7 +67,7 @@
     
     <footer>
       <p>Creado por:</p>
-        <p>Carolina Ortiz & Pascale Stavelot</p> 
+        <p>Carolina Ortiz y Pascale Stavelot</p> 
       <p> dev015 | DV4 | 2024 ©</p>
     </footer>
       <script src="main.js" type="module"></script>

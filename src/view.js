@@ -6,8 +6,8 @@ export const renderItems = (data) => {
     liElement.innerHTML = `
       <img src="${item.imageUrl}" alt="${item.name}">
       <h3 style="text-align: center;"><strong>${item.name}</strong></h3>
-      <h4>${item.facts.streamingPlatform}</h4>
-      <p>${item.shortDescription}</p>
+      <h4 style="margin: 10px; padding: 10px;">${item.facts.streamingPlatform}</h4>
+      <p style="margin: 10px; padding: 10px;">${item.shortDescription}</p>
     `;
     liElement.classList.add('item-style'); 
 
