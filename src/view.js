@@ -1,22 +1,18 @@
-const Series = document.getElementById('dataContainer');
+export const renderItems = (data) => {
+  const ulElement = document.createElement('ul');
 
-export const renderItems = (data) => { // Función flecha
-  data.forEach(Item  => {
-
+  data.forEach(item => {
     const liElement = document.createElement('li');
-    
-    liElement.classList.add('item-style'); //Para agregar clase a li
-
-    const content = `
-      <img src="${Item.imageUrl}" alt="${Item.name}">
-      <h3><strong>${Item.name}</strong></h3>
-      <h4>${Item.facts.streamingPlatform}</h4>
-      <p>${Item.shortDescription}</p>
-
+    liElement.innerHTML = `
+      <img src="${item.imageUrl}" alt="${item.name}">
+      <h3 style="text-align: center;"><strong>${item.name}</strong></h3>
+      <h4>${item.facts.streamingPlatform}</h4>
+      <p>${item.shortDescription}</p>
     `;
-    liElement.innerHTML = content;
+    liElement.classList.add('item-style'); 
 
-    Series.appendChild(liElement);
-
+    ulElement.appendChild(liElement);
   });
+
+  return ulElement; 
 }
