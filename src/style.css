@@ -67,7 +67,7 @@ button:hover {
     color: #EB455F;
 }
 
-#dataContainer {
+ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -103,12 +103,12 @@ li {
     margin-bottom: 8px;
   }
 
-  .item-style h3, .item-style h4, .item-style p {
+.item-style h3, .item-style h4, .item-style p {
     margin: 8px 0;
     text-align: left;
   }
 
-  .item-style h3 {
+.item-style h3 {
     /* Estilos para el título */
     color: #333;
     font-size: 18px;
