@@ -5,7 +5,7 @@ export const renderItems = (data) => {
     const liElement = document.createElement('li');
     liElement.innerHTML = `
       <img src="${item.imageUrl}" alt="${item.name}">
-      <h3><strong>${item.name}</strong></h3>
+      <h3 style="text-align: center;"><strong>${item.name}</strong></h3>
       <h4>${item.facts.streamingPlatform}</h4>
       <p>${item.shortDescription}</p>
     `;

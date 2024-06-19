@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header-container" >
       <h1>Sci-fi Data</h1>
     </header>
     
     <main>
+
+      <div class="description-container">
       <h2>¡Bienvenid@ al fascinante universo de las series de ciencia ficción!<br>
         Desde galaxias lejanas hasta distopías futuristas, aquí cubrimos todo lo que necesitas saber para convertirte en el experto que siempre quisiste ser.</h2>
       <h3>¡Descubre, aprende, disfruta y comparte tu conocimiento!</h3>
+      </div>
 
+      
       <section class="filtros">
         <label for="streamingPlatform">Filtrar por plataforma:</label>
         <select data-testid="select-filter" name="streamingPlatform" id="streamingPlatform">
@@ -50,8 +54,11 @@
           <option value="desc">Nombre Z-A</option>
         </select>
       </section>
+
+      <div class="button-container">
       <button data-testid="button-clear" id="buttonClear">Limpiar</button>
       <button id="stats">Popularidad</button>
+      </div>
         
       <div id="root">
       <ul id="dataContainer"></ul>
