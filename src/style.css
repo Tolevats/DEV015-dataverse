@@ -12,16 +12,16 @@ body {
  
 }
 
-.description-container {
+/*.description-container {
     background-color: rgba(146, 152, 176, 1); 
     padding: 10px 20px 20px 20 px;
     text-align: center;
     border-radius: 5px;
     margin: 20px; 
-}
+}*/
 
 .header-container {
-    background-color: rgba(217, 217, 217, 1); 
+    background-image: url(assets/gridposters2.jpg); 
     padding: 10px 20px 20px 20 px;
     text-align: center;
     border-radius: 5px;
@@ -41,21 +41,18 @@ header {
 h2, h3 {
     font-family: "Offside", sans-serif;
     font-weight: 400;
-    font-style: normal;  
+    font-style: normal;
     color: #FCFFE7;
     padding: 20px; 
-    text-align: center;
+    text-align: left;
 }
 
 h2 {
     font-size: 18px;
-    text-align: center;
 }
 
 h3 {
     font-size: 14px;
-    padding: 2px, 20px, 10px, 2px;
-    text-align: center;
 }
 
 .filtros {
@@ -80,7 +77,6 @@ label {
 
 }
 
-
 .button-container {
     display: flex;
     justify-content: center; 
@@ -91,6 +87,7 @@ label {
 }
 
 button {
+    display: inline-flex;
     background-color: #EB455F;
     color: #FCFFE7;
     font-family: "Gugi", sans-serif;
@@ -99,7 +96,6 @@ button {
     margin: 10px 10px 30px 20px;
     border: 0;
     border-radius: 5px;
-
   }
 
 button:hover {
@@ -145,8 +141,13 @@ li {
   }
 
 .item-style h3, .item-style h4, .item-style p {
-    margin: 8px 0;
+    margin: 10px;
+    padding: 10px;
     text-align: left;
+  }
+
+.item-style h3, .item-style h4 {
+    font-family: "Gugi", sans-serif;
   }
 
 .item-style h3 {
@@ -164,7 +165,6 @@ li {
 
 .item-style h4 {
     color: #EB455F;
-    font-family: "Gugi", sans-serif;
     font-size: 14px;
 }
 
@@ -181,7 +181,6 @@ select {
     
 }
 .filtros select {
-    font-family: "Gugi", sans-serif;
     line-height: 1.5; /* Esto aumenta la altura de la línea */
     height: 20px; /* Ajusta este valor según tus necesidades */
     padding: 1px; /* Ajusta el padding según el efecto deseado */
