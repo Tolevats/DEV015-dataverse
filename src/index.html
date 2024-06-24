@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header-container" >
-      <h1>Sci-fi Data</h1>
+    <header>
+      <div class="header-container">
+        <h1>Sci-fi Data</h1>
+      </div>
     </header>
     
     <main>
@@ -21,46 +23,56 @@
 
       
       <section class="filtros">
-        <label for="streamingPlatform">Filtrar por :</label>
-        <select data-testid="select-filter" name="streamingPlatform" id="streamingPlatform">
-          <option value="" disabled selected>Plataforma</option>
-          <option value="apple-tv">Adult Swim</option>
-          <option value="prime-video">Amazon Prime Video</option>
-          <option value="apple-tv">Apple TV+</option>
-          <option value="bbc">BBC</option>
-          <option value="cbs">CBS</option>
-          <option value="disney">Disney+</option>
-          <option value="fox">Fox</option>
-          <option value="hbo">HBO</option>
-          <option value="hulu">Hulu</option>
-          <option value="netflix">Netflix</option>
-          <option value="showtime">Showtime</option>
-          <option value="syfy">Syfy</option>
-          <option value="tcw">The CW</option>
+        <label for="platform"></label>
+        <select data-testid="select-filter" name="platform" id="platform">
+          <option value="" disabled selected>Filtrar por plataforma</option>
+          <option value="Adult Swim">Adult Swim</option>
+          <option value="Amazon Prime Video">Amazon Prime Video</option>
+          <option value="BBC">BBC</option>
+          <option value="CBS">CBS</option>
+          <option value="Disney+">Disney+</option>
+          <option value="Fox">Fox</option>
+          <option value="HBO">HBO</option>
+          <option value="Hulu">Hulu</option>
+          <option value="Netflix">Netflix</option>
+          <option value="Showtime">Showtime</option>
+          <option value="Syfy">Syfy</option>
+          <option value="The CW">The CW</option>
         </select>
       
-        <label for="yearOfRelease">|</label>
-        <select data-testid="select-filter" name="yearOfRelease" id="yearOfRelease">
-          <option value="" disabled selected>Año</option>
-          <option value="asc">Más antiguas</option>
-          <option value="desc">Más recientes</option>
+        <label for="filterYear">|</label>
+        <select data-testid="select-filter" name="filterYear" id="filterYear">
+          <option value="" disabled selected>Filtrar por año</option>
+          <optgroup label="de lanzamiento">
+            <option value="asc">Más antiguas</option>
+            <option value="desc">Más recientes</option>
+          </optgroup>
+          <optgroup label="de fin">
+            <option value="asc">Más antiguas</option>
+            <option value="desc">Más recientes</option>
+          </optgroup>
         </select>
       
-        <label for="name">|</label>
-        <select data-testid="select-sort" name="name" id="name">
-          <option value="" disabled selected>Orden</option>
-          <option value="asc">Nombre A-Z</option>
-          <option value="desc">Nombre Z-A</option>
+        <label for="sorting">|</label>
+        <select data-testid="select-sort" name="sorting" id="sorting">
+          <option value="" disabled selected>Ordenar por:</option>
+          <optgroup label="Título">
+            <option value="asc">A a Z</option>
+            <option value="desc">Z a A</option>
+          </optgroup>
+          <optgroup label="Rating">
+            <option value="asc">Peor rating</option>
+            <option value="desc">Mejor rating</option>
+          </optgroup>
         </select>
+
         <div class="button-container">
           <button data-testid="button-clear" id="buttonClear">Limpiar</button>
-          <button id="stats">Popularidad</button>
+          <button id="stats">Stats</button>
         </div>
       </section>
         
-      <div id="root">
-        <ul id="dataContainer"></ul>
-      </div>
+      <div id="root" class="dataContainer"></div>
 
     </main>
     

@@ -1,4 +1,5 @@
 export const renderItems = (data) => {
+  // console.log('Rendering items:', data);
   const ulElement = document.createElement('ul');
 
   data.forEach(item => {
@@ -18,4 +19,4 @@ export const renderItems = (data) => {
   });
 
   return ulElement; 
-}
+};
