@@ -40,31 +40,37 @@
           <option value="The CW">The CW</option>
         </select>
       
-        <label for="filterYear">|</label>
-        <select data-testid="select-filter" name="filterYear" id="filterYear">
-          <option value="" disabled selected>Filtrar por año</option>
-          <optgroup label="de lanzamiento">
-            <option value="asc">Más antiguas</option>
-            <option value="desc">Más recientes</option>
-          </optgroup>
-          <optgroup label="de fin">
-            <option value="asc">Más antiguas</option>
-            <option value="desc">Más recientes</option>
-          </optgroup>
+        <label for="sortBy"></label>
+        <select data-testid="select-sort" name="sortBy" id="sortBy">
+          <option value="" disabled selected>Ordenar por</option>
+          <option value="name">Nombre</option>
+          <option value="yearOfRelease">Año de lanzamiento</option>
+          <option value="yearOfEnd">Año de finalización</option>
+          <option value="averageRating">Rating promedio</option>
         </select>
-      
-        <label for="sorting">|</label>
+        
+        <label></label>
+        <input type="radio" id="asc" name="sort-order" value="asc" checked>
+        <label for="asc">Ascendente</label>
+        <input type="radio" id="desc" name="sort-order" value="desc">
+        <label for="desc">Descendente</label>
+
+<!--         <label for="sorting">|</label>
         <select data-testid="select-sort" name="sorting" id="sorting">
           <option value="" disabled selected>Ordenar por:</option>
           <optgroup label="Título">
-            <option value="asc">A a Z</option>
-            <option value="desc">Z a A</option>
+            <option value="name-asc">A a Z</option>
+            <option value="name-desc">Z a A</option>
           </optgroup>
-          <optgroup label="Rating">
-            <option value="asc">Peor rating</option>
-            <option value="desc">Mejor rating</option>
+          <optgroup label="Año de lanzamiento">
+            <option value="yearOfRelease-asc">Más antiguas</option>
+            <option value="yearOfRelease-desc">Más recientes</option>
           </optgroup>
-        </select>
+          <optgroup label="Rating promedio">
+            <option value="averageRating-asc">Peor rating</option>
+            <option value="averageRating-desc">Mejor rating</option>
+          </optgroup>
+        </select> -->
 
         <div class="button-container">
           <button data-testid="button-clear" id="buttonClear">Limpiar</button>

@@ -4,7 +4,7 @@ export const filterData = (data, filterBy, value) => {
   return data.filter(item => item.facts[filterBy] === value); //especificar la propiedad facts para filtrar
 };
 
-//Alternativa función para ordenar data
+//Función para ordenar data
 /* export const sortData = (data, sortBy, sortOrder) => {
   return data.sort((a, b) => {
     if (sortOrder === 'asc') {
@@ -14,3 +14,15 @@ export const filterData = (data, filterBy, value) => {
     }
   });
 }; */
+
+export const sortData = (data, sortBy, sortOrder) => {
+  return data.sort((a, b) => {
+    if (a.facts[sortBy] < b.facts[sortBy]) {
+      return sortOrder === 'asc' ? -1 : 1;
+    }
+    if (a.facts[sortBy] > b.facts[sortBy]) {
+      return sortOrder === 'asc' ? 1 : -1;
+    }
+    return 0;
+  });
+};

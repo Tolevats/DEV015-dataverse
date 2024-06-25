@@ -1,4 +1,4 @@
-import { filterData } from './dataFunctions.js';
+import { filterData, sortData } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
@@ -6,31 +6,29 @@ import data from './data/dataset.js';
 document.addEventListener('DOMContentLoaded', () => {
   const rootElement = document.getElementById('root');
   const platformSelect = document.getElementById('platform');
-  // const yearSelect = document.getElementById('filterYear');
-  // const sortSelect = document.getElementById('sorting');
+  const sortBySelect = document.getElementById('sortBy');
+  const sortOrderRadios = document.getElementsByName('sort-order');
   const buttonReset = document.getElementById('buttonClear');
 
-  const renderFilteredData = () => {
-    let filteredData = data;
+  const getSortOrder = () => {
+    const selectedOrder = Array.from(sortOrderRadios).find(radio => radio.checked);
+    return selectedOrder ? selectedOrder.value : 'asc';
+  };
 
+  const renderFilteredData = () => {
     const platform = platformSelect.value;
-    //const year = yearSelect.value;
-    // const sort = sortSelect.value;
+    const sortBy = sortBySelect.value;
+    const sortOrder = getSortOrder();
+
+    let filteredData = data;
 
     if (platform) {
       filteredData = filterData(filteredData, 'streamingPlatform', platform);
-      // console.log(filteredData);
     }
 
-    /*     if (year) {
-      const [filterBy, order] = year.split(' ');
-      filteredData = filterData(filteredData, filterBy, order);
-    } */
-
-    /*     if (sort) {
-      const [sortBy, order] = sort.split(' ');
-      filteredData = filterData(filteredData, sortBy, order);
-    } */
+    if (sortBy) {
+      filteredData = sortData(filteredData, sortBy, sortOrder);
+    }
 
     rootElement.innerHTML = ''; // Limpiar el contenido previo
     rootElement.append(renderItems(filteredData));
@@ -38,13 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Manejador de eventos
   platformSelect.addEventListener('change', renderFilteredData);
-  //yearSelect.addEventListener('change', renderFilteredData);
-  // sortSelect.addEventListener('change', renderFilteredData);
+  sortBySelect.addEventListener('change', renderFilteredData);
+  Array.from(sortOrderRadios).forEach(radio => radio.addEventListener('change', renderFilteredData));
 
   buttonReset.addEventListener('click', () => {
     platformSelect.selectedIndex = 0;
-    //yearSelect.selectedIndex = 0;
-    //sortSelect.selectedIndex = 0;
+    sortBySelect.selectedIndex = 0;
     rootElement.innerHTML = ''
     rootElement.append(renderItems(data));
   });
