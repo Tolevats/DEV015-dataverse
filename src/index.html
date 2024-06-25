@@ -14,18 +14,18 @@
     </header>
     
     <main>
-
+      <section class="SecondContainer">
       <div class="description-container">
       <h2>¡Bienvenid@ al fascinante universo de las series de ciencia ficción!</h2>
       <h3>Desde galaxias lejanas hasta distopías futuristas, aquí cubrimos todo lo que necesitas saber para convertirte en el experto que siempre quisiste ser.</h3>
       <!-- <h3>¡Descubre, aprende, disfruta y comparte tu conocimiento!</h3> -->
       </div>
 
-      
-      <section class="filtros">
-        <label for="platform"></label>
+      <div class="FiltroContainer">
+      <div class="Filtro">
+        <label for="platform"> Escoja la plataforma:</label>
         <select data-testid="select-filter" name="platform" id="platform">
-          <option value="" disabled selected>Filtrar por plataforma</option>
+          <option value="" disabled selected>Plataforma</option>
           <option value="Adult Swim">Adult Swim</option>
           <option value="Amazon Prime Video">Amazon Prime Video</option>
           <option value="BBC">BBC</option>
@@ -40,9 +40,9 @@
           <option value="The CW">The CW</option>
         </select>
       
-        <label for="filterYear">|</label>
+        <label for="filterYear">Escoja el año:</label>
         <select data-testid="select-filter" name="filterYear" id="filterYear">
-          <option value="" disabled selected>Filtrar por año</option>
+          <option value="" disabled selected>Año</option>
           <optgroup label="de lanzamiento">
             <option value="asc">Más antiguas</option>
             <option value="desc">Más recientes</option>
@@ -53,9 +53,9 @@
           </optgroup>
         </select>
       
-        <label for="sorting">|</label>
+        <label for="sorting">Escoja el orden:</label>
         <select data-testid="select-sort" name="sorting" id="sorting">
-          <option value="" disabled selected>Ordenar por:</option>
+          <option value="" disabled selected>Ordenar:</option>
           <optgroup label="Título">
             <option value="asc">A a Z</option>
             <option value="desc">Z a A</option>
@@ -65,11 +65,13 @@
             <option value="desc">Mejor rating</option>
           </optgroup>
         </select>
+      </div>
 
         <div class="button-container">
           <button data-testid="button-clear" id="buttonClear">Limpiar</button>
           <button id="stats">Stats</button>
         </div>
+      </div>
       </section>
         
       <div id="root" class="dataContainer"></div>
