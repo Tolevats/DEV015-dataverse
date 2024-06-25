@@ -7,38 +7,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const rootElement = document.getElementById('root');
   const platformSelect = document.getElementById('platform');
   const sortBySelect = document.getElementById('sortBy');
-  const sortOrderRadios = document.getElementsByName('sort-order');
   const buttonReset = document.getElementById('buttonClear');
 
-  const getSortOrder = () => {
-    const selectedOrder = Array.from(sortOrderRadios).find(radio => radio.checked);
-    return selectedOrder ? selectedOrder.value : 'asc';
-  };
-
+  //función para renderizar datos filtrados y ordenados
   const renderFilteredData = () => {
     const platform = platformSelect.value;
-    const sortBy = sortBySelect.value;
-    const sortOrder = getSortOrder();
+    const sortByOption = sortBySelect.value.split('-');
+    const sortBy = sortByOption[0];
+    const sortOrder = sortByOption[1];
 
     let filteredData = data;
 
-    if (platform) {
+    if (platform) { //filtra por plataforma si está seleccionada
       filteredData = filterData(filteredData, 'streamingPlatform', platform);
     }
 
-    if (sortBy) {
+    if (sortBy && sortOrder) { //ordena los datos si se ha seleccionado una opción de ordenar
       filteredData = sortData(filteredData, sortBy, sortOrder);
     }
 
-    rootElement.innerHTML = ''; // Limpiar el contenido previo
-    rootElement.append(renderItems(filteredData));
+    rootElement.innerHTML = ''; //limpia el contenido previo
+    rootElement.appendChild(renderItems(filteredData));
   };
 
-  //Manejador de eventos
+  //Manejador de eventos para actualizar vista cuando sucedan los filtros/orden
   platformSelect.addEventListener('change', renderFilteredData);
   sortBySelect.addEventListener('change', renderFilteredData);
-  Array.from(sortOrderRadios).forEach(radio => radio.addEventListener('change', renderFilteredData));
-
+  
+  //Botón para limpiar datos seleccionados
   buttonReset.addEventListener('click', () => {
     platformSelect.selectedIndex = 0;
     sortBySelect.selectedIndex = 0;
@@ -46,5 +42,5 @@ document.addEventListener('DOMContentLoaded', () => {
     rootElement.append(renderItems(data));
   });
 
-  rootElement.append(renderItems(data)); //Render inicial
+  rootElement.appendChild(renderItems(data)); //Render inicial
 });

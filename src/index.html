@@ -39,24 +39,9 @@
           <option value="Syfy">Syfy</option>
           <option value="The CW">The CW</option>
         </select>
-      
-        <label for="sortBy"></label>
-        <select data-testid="select-sort" name="sortBy" id="sortBy">
-          <option value="" disabled selected>Ordenar por</option>
-          <option value="name">Nombre</option>
-          <option value="yearOfRelease">Año de lanzamiento</option>
-          <option value="yearOfEnd">Año de finalización</option>
-          <option value="averageRating">Rating promedio</option>
-        </select>
-        
-        <label></label>
-        <input type="radio" id="asc" name="sort-order" value="asc" checked>
-        <label for="asc">Ascendente</label>
-        <input type="radio" id="desc" name="sort-order" value="desc">
-        <label for="desc">Descendente</label>
 
-<!--         <label for="sorting">|</label>
-        <select data-testid="select-sort" name="sorting" id="sorting">
+        <label for="sortBy">|</label>
+        <select data-testid="select-sort" name="sortBy" id="sortBy">
           <option value="" disabled selected>Ordenar por:</option>
           <optgroup label="Título">
             <option value="name-asc">A a Z</option>
@@ -70,7 +55,7 @@
             <option value="averageRating-asc">Peor rating</option>
             <option value="averageRating-desc">Mejor rating</option>
           </optgroup>
-        </select> -->
+        </select>
 
         <div class="button-container">
           <button data-testid="button-clear" id="buttonClear">Limpiar</button>
