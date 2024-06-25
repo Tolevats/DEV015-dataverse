@@ -23,9 +23,9 @@
 
       <div class="FiltroContainer">
       <div class="Filtro">
-        <label for="platform"> Escoja la plataforma:</label>
+        <label for="platform"></label>
         <select data-testid="select-filter" name="platform" id="platform">
-          <option value="" disabled selected>Plataforma</option>
+          <option value="" disabled selected>Filtarar por:</option>
           <option value="Adult Swim">Adult Swim</option>
           <option value="Amazon Prime Video">Amazon Prime Video</option>
           <option value="BBC">BBC</option>
@@ -39,30 +39,20 @@
           <option value="Syfy">Syfy</option>
           <option value="The CW">The CW</option>
         </select>
-      
-        <label for="filterYear">Escoja el año:</label>
-        <select data-testid="select-filter" name="filterYear" id="filterYear">
-          <option value="" disabled selected>Año</option>
-          <optgroup label="de lanzamiento">
-            <option value="asc">Más antiguas</option>
-            <option value="desc">Más recientes</option>
-          </optgroup>
-          <optgroup label="de fin">
-            <option value="asc">Más antiguas</option>
-            <option value="desc">Más recientes</option>
-          </optgroup>
-        </select>
-      
-        <label for="sorting">Escoja el orden:</label>
-        <select data-testid="select-sort" name="sorting" id="sorting">
-          <option value="" disabled selected>Ordenar:</option>
+        <label for="sortBy">|</label>
+        <select data-testid="select-sort" name="sortBy" id="sortBy">
+          <option value="" disabled selected>Ordenar por:</option>
           <optgroup label="Título">
-            <option value="asc">A a Z</option>
-            <option value="desc">Z a A</option>
+            <option value="name-asc">A a Z</option>
+            <option value="name-desc">Z a A</option>
           </optgroup>
-          <optgroup label="Rating">
-            <option value="asc">Peor rating</option>
-            <option value="desc">Mejor rating</option>
+          <optgroup label="Año de lanzamiento">
+            <option value="yearOfRelease-asc">Más antiguas</option>
+            <option value="yearOfRelease-desc">Más recientes</option>
+          </optgroup>
+          <optgroup label="Rating promedio">
+            <option value="averageRating-asc">Peor rating</option>
+            <option value="averageRating-desc">Mejor rating</option>
           </optgroup>
         </select>
       </div>
