@@ -1,4 +1,4 @@
-import { filterData } from './dataFunctions.js';
+import { filterData, sortData } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
@@ -6,48 +6,41 @@ import data from './data/dataset.js';
 document.addEventListener('DOMContentLoaded', () => {
   const rootElement = document.getElementById('root');
   const platformSelect = document.getElementById('platform');
-  // const yearSelect = document.getElementById('filterYear');
-  // const sortSelect = document.getElementById('sorting');
+  const sortBySelect = document.getElementById('sortBy');
   const buttonReset = document.getElementById('buttonClear');
 
+  //función para renderizar datos filtrados y ordenados
   const renderFilteredData = () => {
+    const platform = platformSelect.value;
+    const sortByOption = sortBySelect.value.split('-');
+    const sortBy = sortByOption[0];
+    const sortOrder = sortByOption[1];
+
     let filteredData = data;
 
-    const platform = platformSelect.value;
-    //const year = yearSelect.value;
-    // const sort = sortSelect.value;
-
-    if (platform) {
+    if (platform) { //filtra por plataforma si está seleccionada
       filteredData = filterData(filteredData, 'streamingPlatform', platform);
-      // console.log(filteredData);
     }
 
-    /*     if (year) {
-      const [filterBy, order] = year.split(' ');
-      filteredData = filterData(filteredData, filterBy, order);
-    } */
+    if (sortBy && sortOrder) { //ordena los datos si se ha seleccionado una opción de ordenar
+      filteredData = sortData(filteredData, sortBy, sortOrder);
+    }
 
-    /*     if (sort) {
-      const [sortBy, order] = sort.split(' ');
-      filteredData = filterData(filteredData, sortBy, order);
-    } */
-
-    rootElement.innerHTML = ''; // Limpiar el contenido previo
-    rootElement.append(renderItems(filteredData));
+    rootElement.innerHTML = ''; //limpia el contenido previo
+    rootElement.appendChild(renderItems(filteredData));
   };
 
-  //Manejador de eventos
+  //Manejador de eventos para actualizar vista cuando sucedan los filtros/orden
   platformSelect.addEventListener('change', renderFilteredData);
-  //yearSelect.addEventListener('change', renderFilteredData);
-  // sortSelect.addEventListener('change', renderFilteredData);
-
+  sortBySelect.addEventListener('change', renderFilteredData);
+  
+  //Botón para limpiar datos seleccionados
   buttonReset.addEventListener('click', () => {
     platformSelect.selectedIndex = 0;
-    //yearSelect.selectedIndex = 0;
-    //sortSelect.selectedIndex = 0;
+    sortBySelect.selectedIndex = 0;
     rootElement.innerHTML = ''
     rootElement.append(renderItems(data));
   });
 
-  rootElement.append(renderItems(data)); //Render inicial
+  rootElement.appendChild(renderItems(data)); //Render inicial
 });
