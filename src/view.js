@@ -12,6 +12,8 @@ export const renderItems = (data) => {
       <h3 itemprop="name"><strong>${item.name}</strong></h3>
       <h4 itemprop="containsSeason">${item.facts.streamingPlatform}</h4>
       <p itemprop="description">${item.shortDescription}</p>
+      <button class="info-button" itemprop="action" onclick="handleButtonClick('${item.id}')">Más información</button>
+
     `;
     liElement.classList.add('item-style'); 
 
