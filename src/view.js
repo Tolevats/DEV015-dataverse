@@ -8,14 +8,14 @@ export const renderItems = (data) => {
     liElement.setAttribute('itemtype', 'http://schema.org/TVSeries'); //Especifica el tipo de entidad (una serie de televisión)
 
     liElement.innerHTML = `
+    <dl>
       <img src="${item.imageUrl}" alt="${item.name}" itemprop="image">
       <h3 itemprop="name"><strong>${item.name}</strong></h3>
       <h4 itemprop="containsSeason">${item.facts.streamingPlatform}</h4>
       <p itemprop="description">${item.shortDescription}</p>
       <p itemprop="year">${item.facts.yearOfRelease} - ${item.facts.yearOfEnd}</p>
       <p itemprop="rating">${item.facts.averageRating}</p>
-      <button class="info-button" itemprop="action" onclick="handleButtonClick('${item.id}')">Más información</button>
-
+    </dl>  
     `;
     liElement.classList.add('item-style'); 
 

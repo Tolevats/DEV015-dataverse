@@ -7,20 +7,31 @@ export const filterData = (data, filterBy, value) => {
 //Función para ordenar data por propiedad y orden específico
 export const sortData = (data, sortBy, sortOrder) => {
   return data.sort((a, b) => { //llamar método sort en array data comparando los 2 elementos en cada iteración
-    if (a.facts[sortBy] < b.facts[sortBy]) { //compara valores de sortBy en facts de cada elemento (objeto a y b)
-      if (sortOrder === 'asc') { //comprobar si sortOrder es igual a 'asc'
-        return -1; //indicar que debe ir antes que b
+    // Determinar el valor de comparación para el objeto 'a'
+    let valueA = a[sortBy] !== undefined ? a[sortBy] : a.facts[sortBy];
+    // Determinar el valor de comparación para el objeto 'b'
+    let valueB = b[sortBy] !== undefined ? b[sortBy] : b.facts[sortBy];
+
+    // Compara los valores para determinar el orden
+    if (valueA < valueB) {
+      // Si el orden es ascendente, 'a' va antes que 'b'
+      if (sortOrder === 'asc') {
+        return -1;
       } else {
-        return 1; //indicar que debe ir después que b
+        // Si el orden es descendente, 'a' va después que 'b'
+        return 1;
       }
     }
-    if (a.facts[sortBy] > b.facts[sortBy]) {
+    if (valueA > valueB) {
+      // Si el orden es ascendente, 'a' va después que 'b'
       if (sortOrder === 'asc') {
         return 1;
       } else {
+        // Si el orden es descendente, 'a' va antes que 'b'
         return -1;
       }
     }
+    // Si los valores son iguales, no cambia el orden
     return 0;
   });
 };

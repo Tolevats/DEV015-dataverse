@@ -4,43 +4,36 @@ import data from './data/dataset.js';
 
 //selector DOM
 document.addEventListener('DOMContentLoaded', () => {
-  const rootElement = document.getElementById('root');
-  const platformSelect = document.getElementById('platform');
-  const sortBySelect = document.getElementById('sortBy');
-  const buttonReset = document.getElementById('buttonClear');
-
-  //función para renderizar datos filtrados y ordenados
-  const renderFilteredData = () => {
-    const platform = platformSelect.value;
-    const sortByOption = sortBySelect.value.split('-');
-    const sortBy = sortByOption[0];
-    const sortOrder = sortByOption[1];
-
-    let filteredData = data;
-
-    if (platform) { //filtra por plataforma si está seleccionada
-      filteredData = filterData(filteredData, 'streamingPlatform', platform);
-    }
-
-    if (sortBy && sortOrder) { //ordena los datos si se ha seleccionado una opción de ordenar
-      filteredData = sortData(filteredData, sortBy, sortOrder);
-    }
-
-    rootElement.innerHTML = ''; //limpia el contenido previo
-    rootElement.appendChild(renderItems(filteredData));
-  };
-
-  //Manejador de eventos para actualizar vista cuando sucedan los filtros/orden
-  platformSelect.addEventListener('change', renderFilteredData);
-  sortBySelect.addEventListener('change', renderFilteredData);
+  const rootElement = document.querySelector('#root');
+  const platformSelect = document.querySelector('#platform');
+  const sortSelect = document.querySelector('#sortBy');
+  const buttonReset = document.querySelector('#buttonClear');
   
-  //Botón para limpiar datos seleccionados
-  buttonReset.addEventListener('click', () => {
-    platformSelect.selectedIndex = 0;
-    sortBySelect.selectedIndex = 0;
-    rootElement.innerHTML = ''
-    rootElement.append(renderItems(data));
-  });
+  let filteredData = data; //estado inicial data
 
-  rootElement.appendChild(renderItems(data)); //Render inicial
+  platformSelect.addEventListener('change', (e) => { //para obtener el objeto Event
+    const filterValue = e.target.value; //para obtener el valor actual del elemento que disparó el evento
+    filteredData = filterData(data, 'streamingPlatform', filterValue);
+    const sortedData = sortData(filteredData, sortSelect.value.split('-')[0], sortSelect.value.split('-')[1]); //acceder a los elementos del array para obtener el sortBy y el sortOrder
+    rootElement.innerHTML = '';
+    rootElement.appendChild(renderItems(sortedData));
+  });
+  
+  sortSelect.addEventListener('change', (e) => {
+    const [sortBy, sortOrder] = e.target.value.split('-');
+    const sortedData = sortData(filteredData, sortBy, sortOrder);
+    rootElement.innerHTML = '';
+    rootElement.appendChild(renderItems(sortedData));
+  });
+  
+  buttonReset.addEventListener('click', () => {
+    platformSelect.value = '';
+    sortSelect.value = '';
+    // filteredData = data;
+    rootElement.innerHTML = '';
+    rootElement.appendChild(renderItems(data));
+  });
+  
+  // Renderización inicial
+  rootElement.appendChild(renderItems(data));
 });
