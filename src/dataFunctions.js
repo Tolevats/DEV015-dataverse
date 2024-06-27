@@ -34,7 +34,7 @@ export const sortData = (data, sortBy, sortOrder) => {
 
   // Eliminar la propiedad sortByValue antes de devolver los datos ordenados
   return sortedData.map(item => {
-    const { sortByValue, ...rest } = item;
+    const { sortByValue, ...rest } = item; // eslint-disable-line no-unused-vars
     return rest;
   });
 };
