@@ -4,10 +4,10 @@ import data from './data/dataset.js';
 
 //selector DOM
 document.addEventListener('DOMContentLoaded', () => {
-  const rootElement = document.getElementById('root');
-  const platformSelect = document.getElementById('platform');
-  const sortBySelect = document.getElementById('sortBy');
-  const buttonReset = document.getElementById('buttonClear');
+  const rootElement = document.querySelector('#root');
+  const platformSelect = document.querySelector('#platform');
+  const sortBySelect = document.querySelector('#sortBy');
+  const buttonReset = document.querySelector('#buttonClear');
 
   //función para renderizar datos filtrados y ordenados
   const renderFilteredData = () => {
