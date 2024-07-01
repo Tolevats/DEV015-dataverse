@@ -8,15 +8,14 @@
 }
 .header-container {
     background-color: #1b485d; 
-    padding: 5px 10px;
+    padding: 10px;
     text-align: right;
     font-family: "Gugi", sans-serif;
     font-weight: 50;
     font-style: normal;
-    font-size: 10px;
+    font-size: 18px;
     color:#ffffff;
-    padding: 5px;
-    text-shadow: 0 0 5px #66c3ff;
+    text-shadow: 0 0 15px #66c3ff;
     letter-spacing: 1px;
     
 }
@@ -29,11 +28,10 @@
 .description-container {
     
     flex: 1;
-    min-width: 750px;
     max-width: 2000px;
-    max-height: 200;
+    max-height: 400px;
     text-align: center;
-    padding: 50px 40px;
+    padding: 20px;
     margin: 0px; 
     background-image: url(assets/SFD.png); 
     background-size: cover;
@@ -55,10 +53,14 @@ h2, h3 {
     font-family: "Offside", sans-serif;
     font-style: normal;
     color: #000000;
-    padding: 15px; 
+    padding: 0px; 
     text-align: center;
+    
 }
 
+h2 {
+    font-size: 20px;
+}
 h2 {
     font-size: 20px;
 }
@@ -109,20 +111,21 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Espacio entre las tarjetas */
+    gap: 5px; /* Espacio entre las tarjetas */
     list-style-type: none;
     padding: 0px;
     text-align: center;
+    margin: 5px; 
   }
 
 li {
     margin: 10px;
-    padding: 10px,  20px, 20px, 20px;
+    padding: 10px, 20px;
     border: 1px solid #2b6e8f;
     box-shadow: 0 4px 8px #66c3ff;
     background-color: #ffffff;
     width: 100%;
-    max-width: 200px; /* Ancho máximo de la tarjeta */
+    max-width: 250px; /* Ancho máximo de la tarjeta */
     text-align: center;
     transition: transform 0.2s;
 }
@@ -135,8 +138,8 @@ li {
     /* Estilos para las imágenes */
     width: 100%;
     height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 200px; /* Altura máxima de la imagen */
-    margin-bottom: 8px;
+    max-height: 250px; /* Altura máxima de la imagen */
+    margin-bottom: 0px;
     box-shadow: 0 4px 8px #68b0e0;
   }
 
@@ -203,4 +206,66 @@ select {
     background-color: #1b485d; /* Color de fondo celeste al pasar el cursor */
     color: #ffffff; /* Color del texto blanco al pasar el cursor */
 }
-
+@media screen and (max-width: 1024px) {
+    .SecondContainer {
+      flex-direction: column;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Filtro {
+      padding: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-container {
+      font-size: 16px;
+    }
+  
+    .description-container {
+      max-height: 300px;
+    }
+  
+    .button-container {
+      display: flex; 
+      flex-direction: row; 
+      justify-content: center; 
+      align-items: center;
+      margin-top: 10px; 
+      overflow-x: auto; 
+      padding-bottom: 10px;
+    }
+  
+    .button-container button {
+      margin: 0 5px; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header-container {
+      font-size: 14px;
+    }
+  
+    .description-container {
+      max-height: 250px;
+    }
+  
+    .button-container {
+      display: flex; 
+      flex-direction: row; 
+      justify-content: center; 
+      align-items: center;
+      margin-top: 10px; 
+      overflow-x: auto; 
+      padding-bottom: 10px; 
+    }
+  
+    .button-container button {
+      margin: 0 5px; 
+    }
+  }
+  

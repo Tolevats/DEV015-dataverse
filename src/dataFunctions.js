@@ -6,21 +6,35 @@ export const filterData = (data, filterBy, value) => {
 
 //Función para ordenar data por propiedad y orden específico
 export const sortData = (data, sortBy, sortOrder) => {
-  return data.sort((a, b) => { //llamar método sort en array data comparando los 2 elementos en cada iteración
-    if (a.facts[sortBy] < b.facts[sortBy]) { //compara valores de sortBy en facts de cada elemento (objeto a y b)
-      if (sortOrder === 'asc') { //comprobar si sortOrder es igual a 'asc'
-        return -1; //indicar que debe ir antes que b
-      } else {
-        return 1; //indicar que debe ir después que b
-      }
-    }
-    if (a.facts[sortBy] > b.facts[sortBy]) {
+  // Filtrar los datos para asegurarse de que cada elemento tiene la propiedad 'facts' y la clave 'sortBy'
+  const filteredData = data.filter(item => item.facts && item.facts[sortBy] !== undefined);
+
+  // Utilizar map para crear un nuevo array con los valores de sortBy en cada objeto
+  const mappedData = filteredData.map(item => ({
+    ...item,
+    sortByValue: item.facts[sortBy]
+  }));
+
+  // Utilizar reduce para ordenar los datos de acuerdo con sortByValue y sortOrder
+  const sortedData = mappedData.reduce((acc, item) => {
+    // Insertar cada elemento en la posición correcta en el array acumulador
+    let insertIndex = acc.findIndex(accItem => {
       if (sortOrder === 'asc') {
-        return 1;
+        return item.sortByValue < accItem.sortByValue;
       } else {
-        return -1;
+        return item.sortByValue > accItem.sortByValue;
       }
+    });
+    if (insertIndex === -1) {
+      insertIndex = acc.length;
     }
-    return 0;
+    acc.splice(insertIndex, 0, item);
+    return acc;
+  }, []);
+
+  // Eliminar la propiedad sortByValue antes de devolver los datos ordenados
+  return sortedData.map(item => {
+    const { sortByValue, ...rest } = item; // eslint-disable-line no-unused-vars
+    return rest;
   });
 };
