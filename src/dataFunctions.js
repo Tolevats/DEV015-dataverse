@@ -43,4 +43,5 @@ export const sortData = (data, sortBy, sortOrder) => {
 
   // Devolver los datos ordenados
   return sortedData.map(({ sortByValue, ...rest }) => rest); // eslint-disable-line no-unused-vars
+
 };
