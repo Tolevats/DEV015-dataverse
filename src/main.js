@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const sortBySelect = document.querySelector('#sortBy');
   const buttonReset = document.querySelector('#buttonClear');
 
+  const originalData = [...data];
+
+
   //función para renderizar datos filtrados y ordenados
   const renderFilteredData = () => {
     const platform = platformSelect.value;
@@ -36,11 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
   
   //Botón para limpiar datos seleccionados
   buttonReset.addEventListener('click', () => {
-    platformSelect.selectedIndex = 0;
-    sortBySelect.selectedIndex = 0;
-    rootElement.innerHTML = ''
-    rootElement.append(renderItems(data));
+    sortBySelect.selectedIndex = 0; 
+    platformSelect.selectedIndex = 0;  
+    rootElement.innerHTML = '';       
+    rootElement.append(renderItems(originalData)); 
   });
-
-  rootElement.appendChild(renderItems(data)); //Render inicial
+  
+  rootElement.appendChild(renderItems(data)); 
 });
