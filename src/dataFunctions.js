@@ -1,40 +1,47 @@
-//Función para filtrar data
+// Función para filtrar data
 export const filterData = (data, filterBy, value) => {
   // console.log(`Filter by: ${filterBy}, Value: ${value}`);
-  return data.filter(item => item.facts[filterBy] === value); //especificar la propiedad facts para filtrar con lo que coincida con valor
+  return data.filter(item => item.facts[filterBy] === value); // Especificar la propiedad facts para filtrar con lo que coincida con valor
 };
 
-//Función para ordenar data por propiedad y orden específico
+// Función para ordenar data por propiedad y orden específico
 export const sortData = (data, sortBy, sortOrder) => {
-  // Filtrar los datos para asegurarse de que cada elemento tiene la propiedad 'facts' y la clave 'sortBy'
-  const filteredData = data.filter(item => item.facts && item.facts[sortBy] !== undefined);
+  let sortedData;
 
-  // Utilizar map para crear un nuevo array con los valores de sortBy en cada objeto
-  const mappedData = filteredData.map(item => ({
-    ...item,
-    sortByValue: item.facts[sortBy]
-  }));
-
-  // Utilizar reduce para ordenar los datos de acuerdo con sortByValue y sortOrder
-  const sortedData = mappedData.reduce((acc, item) => {
-    // Insertar cada elemento en la posición correcta en el array acumulador
-    let insertIndex = acc.findIndex(accItem => {
+  if (sortBy === 'name') {
+    sortedData = data.sort((a, b) => {
       if (sortOrder === 'asc') {
-        return item.sortByValue < accItem.sortByValue;
+        return a.name.localeCompare(b.name); // Orden ascendente por nombre
       } else {
-        return item.sortByValue > accItem.sortByValue;
+        return b.name.localeCompare(a.name); // Orden descendente por nombre
       }
     });
-    if (insertIndex === -1) {
-      insertIndex = acc.length;
-    }
-    acc.splice(insertIndex, 0, item);
-    return acc;
-  }, []);
+  } else if (sortBy === 'id') {
+    sortedData = data.sort((a, b) => {
+      if (sortOrder === 'asc') {
+        return a.id.localeCompare(b.id); // Orden ascendente por id
+      } else {
+        return b.id.localeCompare(a.id); // Orden descendente por id
+      }
+    });
+  } else {
+  
+    const filteredData = data.filter(item => item.facts && item.facts[sortBy] !== undefined);
+    const mappedData = filteredData.map(item => ({
+      ...item,
+      sortByValue: item.facts[sortBy]
+    }));
 
-  // Eliminar la propiedad sortByValue antes de devolver los datos ordenados
-  return sortedData.map(item => {
-    const { sortByValue, ...rest } = item; // eslint-disable-line no-unused-vars
-    return rest;
-  });
+    sortedData = mappedData.sort((a, b) => {
+      if (sortOrder === 'asc') {
+        return a.sortByValue - b.sortByValue; 
+      } else {
+        return b.sortByValue - a.sortByValue; 
+      }
+    });
+  }
+
+  // Devolver los datos ordenados
+  return sortedData.map(({ sortByValue, ...rest }) => rest); // eslint-disable-line no-unused-vars
+
 };

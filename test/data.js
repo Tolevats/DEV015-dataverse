@@ -1,4 +1,3 @@
-// Muestreo de 4 objetos dentro de nuestra data
 
 export const data = [
   {
