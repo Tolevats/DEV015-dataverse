@@ -38,3 +38,39 @@ export const sortData = (data, sortBy, sortOrder) => {
     return rest;
   });
 };
+
+//Funciones para cálculos estadísticos
+export const computeStats = (data) => {
+  //Promedio de años de transmisión de series
+  const totalYears = data.reduce((acc, item) => {
+    const startYear = parseInt(item.facts.yearOfRelease);
+    const endYear = parseInt(item.facts.yearOfEnd);
+    
+    // Verifica que ambos años sean números válidos
+    if (!isNaN(startYear) && !isNaN(endYear)) {
+      return acc + (endYear - startYear + 1); // +1 para incluir el año de inicio
+    }
+    return acc;
+  }, 0);
+  
+  const avgYears = totalYears / data.length;
+
+  //Cantidad promedio de series por país
+  const countryCount = data.reduce((acc, item) => {
+    const country = item.facts.country;
+    acc[country] = (acc[country] || 0) + 1;
+    return acc;
+  }, {});
+  const avgSeriesByCountry = Object.entries(countryCount).reduce((acc, [country, count]) => {
+    acc[country] = count / data.length;
+    return acc;
+  }, {});
+
+  console.log('Promedio de años de transmisión:', avgYears);
+  console.log('Cantidad promedio de series por país:', avgSeriesByCountry);
+
+  return {
+    avgYears,
+    avgSeriesByCountry,
+  };
+};

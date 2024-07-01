@@ -143,7 +143,7 @@ li {
     box-shadow: 0 4px 8px #68b0e0;
   }
 
-.item-style h3, .item-style h4, .item-style p {
+.item-style h3, .item-style h4, .item-style h5, .item-style h6, .item-style p {
     margin: 10px;
     padding: 10px;
     text-align: left;
@@ -169,6 +169,12 @@ li {
 .item-style h4 {
     color: #EB455F;
     font-size: 14px;
+}
+
+.item-style h5, h6 {
+  color: #15053f;
+  font-family: "Offside", sans-serif;
+  font-weight: bold;
 }
 
 footer {
