@@ -1,4 +1,4 @@
-import { filterData, sortData } from './dataFunctions.js';
+import { filterData, sortData, computeStats } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const platformSelect = document.querySelector('#platform');
   const sortBySelect = document.querySelector('#sortBy');
   const buttonReset = document.querySelector('#buttonClear');
+  const buttonStats = document.querySelector('#buttonStats');
 
   const originalData = [...data];
 
@@ -45,5 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
     rootElement.append(renderItems(originalData)); 
   });
   
+  //Botón para mostrar estadísticas
+  buttonStats.addEventListener('click', () => {
+    const stats = computeStats(data);
+      
+    const resultsContainer = document.querySelector('#results');
+    resultsContainer.innerHTML = `
+        <h4>${stats.avgYears.toFixed(2)} años es el promedio de transmisión</h4>
+         `;
+  });  
+
   rootElement.appendChild(renderItems(data)); 
 });

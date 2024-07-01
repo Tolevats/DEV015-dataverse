@@ -45,3 +45,24 @@ export const sortData = (data, sortBy, sortOrder) => {
   return sortedData.map(({ sortByValue, ...rest }) => rest); // eslint-disable-line no-unused-vars
 
 };
+
+//Función para cálculo estadístico
+export const computeStats = (data) => {
+  //Promedio de años de transmisión de series
+  const totalYears = data.reduce((acc, item) => {
+    const startYear = parseInt(item.facts.yearOfRelease);
+    const endYear = parseInt(item.facts.yearOfEnd);
+    
+    // Verifica que ambos años sean números válidos
+    if (!isNaN(startYear) && !isNaN(endYear)) {
+      return acc + (endYear - startYear + 1); // +1 para incluir el año de inicio
+    }
+    return acc;
+  }, 0);
+
+  const avgYears = totalYears / data.length;
+
+  // console.log('Promedio de años de transmisión:', avgYears);
+
+  return { avgYears };
+};
