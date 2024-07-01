@@ -1,4 +1,4 @@
-import { filterData } from '../src/dataFunctions.js';
+import { filterData, sortData } from '../src/dataFunctions.js';
 import { data } from './data.js';
 
 describe('filterData', () => {
@@ -13,4 +13,35 @@ describe('filterData', () => {
     const filteredData = filterData(data, 'streamingPlatform', 'Star+');
     expect(filteredData.length).toBe(0); // Esperamos 0 resultados
   });
+  
+});
+describe('sortData', () => {
+  it('should sort data by name in ascending order', () => {
+    const sortedData = sortData(data, 'name', 'asc');
+    expect(sortedData.map(item => item.name)).toEqual(['Black Mirror', 'Stranger Things', 'The Expanse', 'Westworld']);
+  });
+
+  it('should sort data by name in descending order', () => {
+    const sortedData = sortData(data, 'name', 'desc');
+    expect(sortedData.map(item => item.name)).toEqual(['Westworld', 'The Expanse', 'Stranger Things', 'Black Mirror']);
+  });
+
+  it('should sort data by yearOfRelease in ascending order', () => {
+    const sortedData = sortData(data, 'yearOfRelease', 'asc');
+    expect(sortedData.map(item => item.facts.yearOfRelease)).toEqual(['2011', '2015', '2016', '2016']);
+  });
+  it('should sort data by yearOfRelease in descending order', () => {
+    const sortedData = sortData(data, 'yearOfRelease', 'desc');
+    expect(sortedData.map(item => item.facts.yearOfRelease)).toEqual(['2016', '2016', '2015', '2011']);
+  });
+  it('should sort data by averageRating in ascending order', () => {
+    const sortedData = sortData(data, 'averageRating', 'asc');
+    expect(sortedData.map(item => item.name)).toEqual(['The Expanse', 'Westworld', 'Stranger Things', 'Black Mirror']);
+  });
+
+  it('should sort data by averageRating in descending order', () => {
+    const sortedData = sortData(data, 'averageRating', 'desc');
+    expect(sortedData.map(item => item.name)).toEqual(['Black Mirror', 'Stranger Things', 'Westworld', 'The Expanse']);
+  });
+
 });
