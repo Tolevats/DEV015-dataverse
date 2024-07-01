@@ -1,4 +1,4 @@
-import { filterData, sortData } from '../src/dataFunctions.js';
+import { filterData, sortData, computeStats } from '../src/dataFunctions.js';
 import { data } from './data.js';
 
 describe('filterData', () => {
@@ -44,4 +44,11 @@ describe('sortData', () => {
     expect(sortedData.map(item => item.name)).toEqual(['Black Mirror', 'Stranger Things', 'Westworld', 'The Expanse']);
   });
 
+});
+
+describe('computeStats', () => {
+  it('calcula correctamente los años promedio de transmisión', () => {
+    const stats = computeStats(data);
+    expect(stats.avgYears).toBeCloseTo(9.25, 2); // Se espera un promedio de 9 años de transmisión
+  })
 });
