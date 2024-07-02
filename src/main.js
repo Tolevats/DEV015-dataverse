@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
     const resultsContainer = document.querySelector('#results');
     resultsContainer.innerHTML = `
-        <h4>${stats.avgYears.toFixed(2)} años es el promedio de transmisión</h4>
+        <h4><span class="highlight">${stats.avgYears.toFixed(2)}</span> años promedia una transmisión.</h4>
          `;
   });  
 
